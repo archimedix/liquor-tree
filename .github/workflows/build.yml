@@ -9,8 +9,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@master
-      - run: npm install
-      - run: npm run build
+      - name: Checkout 🛎️
+        uses: actions/checkout@master        
+     # - uses: actions/setup-node@master
+      - name: Install 🔧
+        run: npm install
+      - name: Build 🔧
+        run: npm run build
 

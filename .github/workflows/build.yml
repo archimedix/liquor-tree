@@ -19,4 +19,6 @@ jobs:
         run: npm install
       - name: Build 🔧
         run: npm run build
+      - name: Deploy
+        run: git push
 
